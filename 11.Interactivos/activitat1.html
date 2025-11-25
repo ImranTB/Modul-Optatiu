@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Cuadro: Las Meninas</title>
+</head>
+<body>
+
+    <h1>Las Meninas o La Familia de Felipe IV</h1>
+    
+    
+    <p>Una de las obras maestras de la pintura española y pieza central de la colección del Museo Nacional del Prado (MNP).</p>
+
+    <hr>
+
+    <h2>Detalles Clave de la Obra</h2>
+    
+    <details open>
+        <summary>¿Cómo se llama el cuadro?</summary>
+        <p><strong>Las Meninas</strong> o <strong>La familia de Felipe IV</strong>.</p>
+    </details>
+
+    <details>
+        <summary>¿Quién es el autor?</summary>
+        <p><strong>Diego Rodríguez de Silva y Velázquez</strong> (<abbr title="Abreviatura común para el pintor">Velázquez</abbr>). Su nombre completo fue <abbr title="Velázquez's full name">DRSVV</abbr>.</p>
+    </details>
+
+    <details>
+        <summary>¿Cuándo fue pintado?</summary>
+        <p>Se estima que fue pintado en **1656** (S. XVII).</p>
+    </details>
+
+    <details>
+        <summary>¿Qué técnica y materiales se utilizaron?</summary>
+        <p><strong>Óleo sobre lienzo</strong> (<abbr title="Óleo sobre Lienzo">O/L</abbr>). Las dimensiones son de 318 cm × 276 cm.</p>
+    </details>
+
+    <details>
+        <summary>¿Dónde se exhibe?</summary>
+        <p>Actualmente en el **Museo Nacional del Prado** (<abbr title="Museo Nacional del Prado">MNP</abbr>), en Madrid.</p>
+    </details>
+
+    <hr>
+
+    <h2>Buscador de Personajes (Autocompletador)</h2>
+    
+    <p>Empieza a escribir un personaje principal del cuadro para ver sugerencias:</p>
+    <label for="personaje-busqueda">Personaje:</label>
+    <input list="personajes-meninas" id="personaje-busqueda" type="text" name="personaje-favorito">
+
+    <datalist id="personajes-meninas">
+        <option value="Infanta Margarita Teresa"></option>
+        <option value="Diego Velázquez"></option>
+        <option value="Mariana de Austria"></option>
+        <option value="Felipe IV"></option>
+        <option value="Marcela de Ulloa"></option>
+    </datalist>
+
+    <hr>
+
+    <h2>Notificación de Exposición (Modal)</h2>
+    
+    <p>Pulsa para confirmar el horario de visita a la sala:</p>
+    <button popovertarget="dialogo-info" popover>Mostrar Horario</button>
+    
+    <dialog popover id="dialogo-info">
+        <h3>Información Importante</h3>
+        <p>La sala de **Las Meninas** está abierta al público de 10:00 a 19:00 horas.</p>
+        <button popovertarget="dialogo-info">Cerrar</button>
+    </dialog>
+
+</body>
+</html>

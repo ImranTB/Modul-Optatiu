@@ -1,0 +1,29 @@
+<form>
+    <label for="marca-smartphone">¿Cuál es la marca que buscas?:</label>
+    <input list="marcas" type="text" id="marca-smartphone" name="marca">
+    
+    <datalist id="marcas">
+        <option value="Samsung"></option>
+        <option value="Apple"></option>
+        <option value="Xiaomi"></option>
+        <option value="Google"></option>
+        <option value="OnePlus"></option>
+        <option value="Motorola"></option>
+        <option value="Oppo"></option>
+    </datalist>
+
+    <br><br>
+
+    <label for="rango-precio">Selecciona un rango de Precios:</label>
+    <select id="rango-precio" name="precio">
+        <option value="" selected disabled>-- Elige tu rango --</option>
+        <option value="0-200">Menos de 200€</option>
+        <option value="200-500">200€ a 500€</option>
+        <option value="500-800">500€ a 800€</option>
+        <option value="800+">Más de 800€</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Buscar ahora</button>
+</form>
